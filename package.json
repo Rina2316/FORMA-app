@@ -11,9 +11,7 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "react-hot-toast": "^2.4.1",
+    "react-hot-toast": "2.4.1",
     "sass": "^1.80.6"
   },
   "devDependencies": {
