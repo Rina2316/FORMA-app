@@ -171,7 +171,7 @@ export default function Home() {
         <Link href="/projects/page2"> 
           <CustomButton onClick={saveData} className={styles.btn} isDisabled={isSaveDisabled}>
             Следующий шаг
-            <img src="/arrow-right.svg" alt="arrow right"/>
+            <img src="/FORMA-app/arrow-right.svg" alt="arrow right"/>
           </CustomButton>
         </Link>
       </div>

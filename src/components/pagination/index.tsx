@@ -36,7 +36,7 @@ export default function Pagination({ className, ...props }: IPaginationProps) {
       </Link>
       
       <Link href={currentPage === 4 ? "/" : `/projects/page${currentPage + 1}`}>
-        <img src="/pagination.svg" alt="pagination icon" />
+        <img src="/FORMA-app/pagination.svg" alt="pagination icon" />
       </Link>
     </div>
   );

@@ -10,7 +10,7 @@ const ProjectsPage2 = () => (
     <Link href="/projects/page3"> 
           <CustomButton className={styles.btn}>
             Следующий шаг
-            <img src="/arrow-right.svg" alt="arrow right" />
+            <img src="/FORMA-app/arrow-right.svg" alt="arrow right" />
           </CustomButton>
         </Link>
   </div>
