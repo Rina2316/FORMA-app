@@ -1,0 +1,52 @@
+$labelColor: #1d1d1d;
+$borderColor: #00000030;
+$errorBorderColor: #BE1F2A;
+
+.wrapper {
+	position: relative;
+
+	.label {
+		font-size: 15px;
+		color: $labelColor;
+		font-weight: 400;
+		display: inline-block;
+		margin-bottom: 14px;
+	}
+
+	.input {
+		width: 100%;
+		border: 1px solid $borderColor;
+		border-radius: 6px;
+		padding: 16px 18px;
+		transition: all .3s ease 0s;
+		box-sizing: border-box;
+
+		font-size: 15px;
+		font-weight: 400;
+		color: $labelColor;
+		appearance: none; 
+		-webkit-appearance: none; 
+		-moz-appearance: none; 
+		background: transparent; 
+		padding-right: 18px; 
+		
+		.default {
+			color: $borderColor;
+		}
+
+		&.error {
+			border-color: $errorBorderColor;
+		}
+	}
+
+	.errorMsg {
+		font-size: 14px;
+		line-height: 1.49;
+		font-weight: 400;
+		color: $errorBorderColor;
+
+		position: absolute;
+		right: 22px;
+		bottom: 14px;
+	}
+}

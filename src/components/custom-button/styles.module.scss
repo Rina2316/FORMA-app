@@ -1,0 +1,34 @@
+$btnColor: #1d1d1d;
+$borderColor: #0c0d0d29;
+$disabledColor: #ACACAC;
+$disabledBg: #EFEFEF;
+
+.btn {
+	min-width: 248px;
+	padding: 14px 19px;
+
+	font-size: 16px;
+	color: $btnColor;
+	border: 1px solid $borderColor;
+	border-radius: 41px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+	transition: all .3s ease 0s;
+	background: transparent;
+	cursor: pointer;
+
+	&:hover {
+		border-color: $btnColor;
+	}
+
+	&:disabled {
+		background-color: $disabledBg;
+		border-color: $disabledBg;
+		color: $disabledColor;
+		cursor: not-allowed;
+	}
+}
