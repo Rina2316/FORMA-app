@@ -114,8 +114,13 @@ $colorBlack: #1d1d1d;
         position: static; 
         margin-top: 20px; 
       }
-      
+     
     }
     
+  }
+  .block {
+    a {
+      text-decoration: none;
+    }
   }
 }
