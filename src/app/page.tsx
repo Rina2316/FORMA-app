@@ -25,6 +25,7 @@ export default function Home() {
   const [price, setPrice] = useState<string | null>(null);
   const [synopsis, setSynopsis] = useState<string | null>(null);
 
+  const [isFormFilled, setIsFormFilled] = useState<boolean>(false);
   const [isSaveDisabled, setIsSaveDisabled] = useState<boolean>(true);
   const [initialData, setInitialData] = useState<IFormData | null>(null);
 
@@ -62,6 +63,14 @@ export default function Home() {
       setIsSaveDisabled(false);
     } else {
       setIsSaveDisabled(true);
+    }
+  }, [projectName, selectedGenre, selectedFormat, selectedCountry]);
+
+  useEffect(() => {
+    if (projectName && selectedGenre && selectedFormat && selectedCountry) {
+      setIsFormFilled(true);
+    } else {
+      setIsFormFilled(false);
     }
   }, [projectName, selectedGenre, selectedFormat, selectedCountry]);
 
@@ -167,7 +176,7 @@ export default function Home() {
       </form>
 
       <div className={styles.footer}>
-        <Pagination />
+        <Pagination isFormFilled={isFormFilled} />
         <Link href="/projects/page2"> 
           <CustomButton onClick={saveData} className={styles.btn} isDisabled={isSaveDisabled}>
             Следующий шаг
